@@ -22,7 +22,7 @@ Key Features
 
 Installation
 
-1. Download and extract to lib/plugins/emoji_utf8/.
+1. Download and extract to lib/plugins/emojiutf8/.
 
 2. Clear cache via Admin > Configuration Settings > Cache.
 
@@ -46,5 +46,6 @@ Changes from Original
 * Editing Enhancements: jQuery Textcomplete for autocomplete with emoji previews; keyup handler for instant replacement.
 
 * Cleanup: Removed test files, CSS for images, and Emojione image classes (keeps ruleset for mapping).
+
 
 * with emoji font support (e.g., add font-family: 'Apple Color Emoji', sans-serif;
