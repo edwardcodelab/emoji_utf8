@@ -1,7 +1,7 @@
-base    emoji_utf8
-author  Patrick Brown <ptbrown@whoopdedo.org> (original), dodotori (UTF-8 fork)
-email   ptbrown@whoopdedo.org
-date    2025-10-07
-name    Emoji UTF-8 Plugin
-desc    Substitutes emoji shortnames and smileys with UTF-8 characters during editing and rendering
-url     https://www.dokuwiki.org/plugin:emoji_utf8
+base    emojiutf8
+author  Patrick Brown
+email   ptbrown@whoopdedo.org forked by dodotori
+date    2019-05-14
+name    Emoji Substitution utf8 fork
+desc    Emoji substitution plugin using graphics from EmojiOne <http://www.emojione.com>
+url     http://www.whoopdedo.org/doku/wiki/emoji

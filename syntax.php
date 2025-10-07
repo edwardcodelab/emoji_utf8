@@ -3,13 +3,13 @@
  * Emoji UTF-8 Substitution Plugin for DokuWiki
  *
  * @license     GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Patrick Brown <ptbrown@whoopdedo.org> (original), Dodotori (UTF-8 fork)
+ * @author      Patrick Brown <ptbrown@whoopdedo.org> (original), [Your Name] (UTF-8 fork)
  */
 
 // must be run within Dokuwiki
 if(!defined('DOKU_INC')) die();
 
-class syntax_plugin_emoji_utf8 extends DokuWiki_Syntax_Plugin {
+class syntax_plugin_emojiutf8 extends DokuWiki_Syntax_Plugin {  // Adjust class name if not renamed
 
     /**
      * Match emoji code points: (kept as-is for direct Unicode input)
@@ -64,9 +64,9 @@ class syntax_plugin_emoji_utf8 extends DokuWiki_Syntax_Plugin {
     }
 
     public function connectTo($mode) {
-        $this->Lexer->addSpecialPattern($this->getUnicodeRegexp(), $mode, 'plugin_emoji_utf8');
-        $this->Lexer->addSpecialPattern('(?<=\W|^)'.$this->getShortnameRegexp().'(?=\W|$)', $mode, 'plugin_emoji_utf8');
-        $this->Lexer->addSpecialPattern('(?<=\W|^)'.$this->getSmileyRegexp().'(?=\W|$)', $mode, 'plugin_emoji_utf8');
+        $this->Lexer->addSpecialPattern($this->getUnicodeRegexp(), $mode, 'plugin_emoji_utf8');  // Adjust mode if renamed
+        $this->Lexer->addSpecialPattern('(?<=\W|^)'.$this->getShortnameRegexp().'(?=\W|$)', $mode, 'plugin_emojiutf8');
+        $this->Lexer->addSpecialPattern('(?<=\W|^)'.$this->getSmileyRegexp().'(?=\W|$)', $mode, 'plugin_emojiutf8');
     }
 
     public function handle($match, $state, $pos, Doku_Handler $handler) {

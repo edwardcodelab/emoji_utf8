@@ -1,0 +1,81 @@
+/**
+ * Emoji plugin styles
+ *
+ * @license     GPL 2 (http://www.gnu.org/licenses/gpl.html)
+ * @author      Patrick Brown <ptbrown@whoopdedo.org>
+ */
+
+.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-size: .95em;
+    border: 1px solid @ini_border;
+    background-color: @ini_background_alt;
+    a:hover {
+        cursor: pointer;
+    }
+
+    li {
+        letter-spacing: 0;
+        display: block;
+        float: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        &:before {
+            display: none;
+        }
+
+        a {
+            display: block;
+            height: 100%;
+            line-height: 1.83em;
+            padding: 0 1.54em 0 .615em;
+            color: @ini_text;
+            text-decoration: none !important;
+        }
+    }
+    .active,
+    li:hover {
+        background: @ini_link;
+        color: @ini_background;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    li .emojione {
+        vertical-align: middle;
+        font-size: 1.23em;
+        width: 1em;
+        height: 1em;
+        top: -1px;
+        margin: 0 .3em 0 0;
+        min-width: 15px;
+        min-height: 15px;
+    }
+
+    .textcomplete-footer {
+        margin-top: .3em;
+        background: @ini_background_neu;
+
+        a {
+            color: @ini_text_neu;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            line-height: 2.1818em;
+            padding: 0 1.3em 0 2.637em;
+            font-size: .84em;
+        }
+
+        .arrow {
+            margin-left: .67em;
+            font-size: 1.25em;
+        }
+    }
+
+} /* .dropdown-menu */

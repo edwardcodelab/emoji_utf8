@@ -1,6 +1,11 @@
 <?php
 /**
- * Options for the emoji_utf8 plugin
+ * Metadata for configuration manager plugin
+ * Additions for the emoji plugin
  *
- * @author Patrick Brown <ptbrown@whoopdedo.org> (original), dodotori(UTF-8 fork)
+ * @author      Patrick Brown <ptbrown@whoopdedo.org>
  */
+
+$meta['assetsrc']       = array('multichoice',
+                                '_choices' => array('builtin', 'cdn', 'external'));
+$meta['asseturi']       = array('string');

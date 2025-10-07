@@ -1,8 +1,8 @@
 <?php
 /**
- * English language file for emoji_utf8 plugin
+ * English language file for Emoji plugin
  *
- * @author Patrick Brown <ptbrown@whoopdedo.org> (original), dodotori(UTF-8 fork)
+ * @license     GPL 2 (http://www.gnu.org/licenses/gpl.html)
+ * @author      Patrick Brown <ptbrown@whoopdedo.org>
  */
-
-$conf['browseall'] = 'Browse all';
+$lang['js']['browseall']        = 'Browse All';
